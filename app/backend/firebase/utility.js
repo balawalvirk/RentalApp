@@ -11,13 +11,20 @@ let currentUserId = '';
 export async function connectFirebase(){
  // Initialize Firebase
  var config = {
-   apiKey: "AIzaSyBIozGENFnnh2UEP1ndq4mWa3pODL1l3zk",
-   authDomain: "rentalapp-69982.firebaseapp.com",
-   databaseURL: "https://rentalapp-69982.firebaseio.com",
-   projectId: "rentalapp-69982",
-   storageBucket: "rentalapp-69982.appspot.com",
-   messagingSenderId: "855889161975",
-   appId: "1:855889161975:web:bf1e55f7361c4938"
+  //  apiKey: "AIzaSyBIozGENFnnh2UEP1ndq4mWa3pODL1l3zk",
+  //  authDomain: "rentalapp-69982.firebaseapp.com",
+  //  databaseURL: "https://rentalapp-69982.firebaseio.com",
+  //  projectId: "rentalapp-69982",
+  //  storageBucket: "rentalapp-69982.appspot.com",
+  //  messagingSenderId: "855889161975",
+  //  appId: "1:855889161975:web:bf1e55f7361c4938"
+  apiKey: "AIzaSyC_zzXd7JVryijzlgp46VGsWtWvlD6UNpU",
+    authDomain: "rentalapp-6b8da.firebaseapp.com",
+    databaseURL: "https://rentalapp-6b8da.firebaseio.com",
+    projectId: "rentalapp-6b8da",
+    storageBucket: "",
+    messagingSenderId: "855673719443",
+    appId: "1:855673719443:web:45a21e7783f44362"
   };
  if (!firebase.apps.length) {
    firebase.initializeApp(config);
@@ -234,3 +241,4 @@ export function generateId(number) {
     text += possible.charAt(Math.floor(Math.random() * possible.length));
   return text;
 }
+// export const db = app.database();
